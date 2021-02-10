@@ -1,0 +1,37 @@
+.hamburger
+    height: 32px
+    width: 32px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    cursor: pointer
+    padding: 4px
+
+.line
+    height: 2px
+    width: 20px
+    background: #333333
+    transition: all 0.2s ease
+
+.lineTop
+    transform-origin: top left
+    margin-bottom: 5px
+.lineTop--open
+    transform: rotate(45deg)
+.lineTop--close
+    transform: none
+.lineMiddle
+.lineMiddle--open
+    opacity: 0
+    transform: translateX(-16px)
+.lineMiddle--close
+    opacity: 1
+    transform: none
+.lineBottom
+    transform-origin: top left
+    margin-top: 5px
+.lineBottom--open
+    transform: translateX(-1px) rotate(-45deg)
+.lineBottom--close
+    transform: none
